@@ -3,7 +3,7 @@ let txtResult = document.getElementById("display");
 let pageNumber = document.getElementById("pageNumber");
 let characters = document.getElementById("characters");
 
-let pageCount = 1;
+let pageCount = 0;
 
 let characterCount;
 txtLetter.addEventListener("keypress", countwords);
@@ -16,8 +16,6 @@ function countwords() {
 
   if (characterCount > 0) {
 
-    // txtResult.value = `Page count: 1(${characterCount++} / 160 used`;
-
     characters.innerHTML = `${characterCount++}`;
     // for (var i = 0; i < numbers.length; i++) {
     //   if (numbers[i] % num === 0) {
@@ -27,12 +25,11 @@ function countwords() {
 
 
     while (characterCount % 160 == 0) {
+      console.log(pageCount)
       pageCount += 1;
-      console.log(pageCount++)
       characterCount++;
-      // txtResult.value = `Page count: ${pageCount++}(${characterCount++} / 160 used`;
 
     }
-    pageNumber.innerHTML = pageCount;
   }
+  pageNumber.innerHTML = pageCount;
 }
