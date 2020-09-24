@@ -17,16 +17,30 @@ textarea{
 
 .row{
   margin: 0 0;
+  padding:0;
 }
 
 .left{
   background:#4A4A4A;
 }
+
+.left i{
+  color:#fff;
+  font-size:0.75rem;
+  margin-right:15px;
+}
+.right{
+padding:40px 0 0 0;
+background:#EEEEEE;
+}
+
 .left h1{
 color:#fff;
 }
+
 .list-group-item{
  background:none;
+ padding-left:0;
 }
 
 .list-group-item a{
