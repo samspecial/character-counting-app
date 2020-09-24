@@ -16,10 +16,26 @@ textarea{
 }
 
 .row{
-  margin:40px 0 0 0;
+  margin: 0 0;
 }
 
+.left{
+  background:#4A4A4A;
+}
+.left h1{
+color:#fff;
+}
 .list-group-item{
- color:white;
  background:none;
 }
+
+.list-group-item a{
+  font-size:0.8rem;
+  color:white;
+  text-decoration:none;
+}
+
+.list-group-item a:hover{
+  color:#FF6600;
+}
+

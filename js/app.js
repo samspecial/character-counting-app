@@ -10,8 +10,8 @@ txtLetter.addEventListener("keypress", countwords);
 
 function countwords() {
   let letter = txtLetter.value;
-  let cleanTxt = letter.replace(/\s+/g, " ");
-  let splitWords = cleanTxt.split("");
+
+  let splitWords = letter.split("");
   let characterCount = splitWords.length;
 
   if (characterCount > 0) {
